@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -28,15 +28,22 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import tripguide from "./tripguide.png"; 
+import project2 from "./project2.png";
+import project1 from "./project1.png";
+import project3 from "./project3.png";
+import live from './live.png'
+
 
 export {
   logo,
+  live,
   backend,
   creator,
   mobile,
   web,
   github,
+  
   menu,
   close,
   css,
@@ -59,4 +66,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  project2,
+  project1,
+  project3,
 };

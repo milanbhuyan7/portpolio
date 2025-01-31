@@ -1,5 +1,4 @@
 import {
-  
   mobile,
   backend,
   creator,
@@ -16,12 +15,14 @@ import {
   git,
   figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
+  live,
   threejs,
+  project2,
+  project1,
+  project3,
 } from "../assets";
 import tekisky from '../assets/company/tekisky.png';
+// import project2 from '../assets/project2.png'
 
 export const navLinks = [
   {
@@ -157,67 +158,79 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "GareXpert",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution",
+      "Web-based platform that enables users to browse, purchase, and manage auto parts from various suppliers, ensuring a seamless and reliable shopping experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "GSAP",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "EmailJS",
+        color: "-text-gradient",
       },
     ],
-    image: carrent,
+    image: project2,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "TekiskyMart",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An eCommerce platform offering a seamless shopping experience with a wide range of products, secure payments, and fast delivery.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Express",
         color: "pink-text-gradient",
       },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "taildwind",
+        color: "orange-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: project1,
+    source_code_link: "https://tekiskymart.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Softcadia",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A job portal connecting job seekers with employers, offering seamless job search, application tracking, and recruitment solutions.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Express",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: project3,
+    source_code_link: "https://softcadia.tekisky.com/",
   },
 ];
 
