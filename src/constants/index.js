@@ -14,9 +14,12 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  live,
+  mui,
+  express,
+  mysql,
+  github,
   threejs,
+  aws,
   project2,
   project1,
   project3,
@@ -71,10 +74,7 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+
   {
     name: "React JS",
     icon: reactjs,
@@ -92,8 +92,16 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "express",
+    icon: express,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "mysql",
+    icon: mysql,
   },
   {
     name: "Three JS",
@@ -104,12 +112,20 @@ const technologies = [
     icon: git,
   },
   {
+    name: "github",
+    icon: github,
+  },
+  {
     name: "figma",
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "mui",
+    icon: mui,
+  },
+  {
+    name: "aws",
+    icon: aws,
   },
 ];
 
@@ -133,10 +149,11 @@ const testimonials = [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Mohammad Mustaqeem",
-    designation: "software developer",
-    company: "tekisky",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Rahul Iyer",
+    designation: "Export AutoParts",
+    company: "GearXpert",
+    image:
+      "https://www.stglawfirm.com/wp-content/uploads/2022/11/Rahul-Iyer-Attorney-Profile.png.webp",
   },
   {
     testimonial:
@@ -149,7 +166,7 @@ const testimonials = [
   {
     testimonial:
       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+    name: "Kavita Nair",
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",

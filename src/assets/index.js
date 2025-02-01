@@ -20,6 +20,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import mui from "./skills/mui.png"
+import express from "./skills/express.png"
+import mysql from "./skills/mysql.png"
+import aws from "./skills/aws.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -43,7 +47,13 @@ export {
   mobile,
   web,
   github,
+  mui,
+  express,
+  mysql,
+  aws,
   
+
+
   menu,
   close,
   css,
