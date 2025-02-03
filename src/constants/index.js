@@ -18,7 +18,7 @@ import {
   express,
   mysql,
   github,
-  threejs,
+  Three3js,
   aws,
   project2,
   project1,
@@ -105,7 +105,7 @@ const technologies = [
   },
   {
     name: "Three JS",
-    icon: threejs,
+    icon: Three3js,
   },
   {
     name: "git",
