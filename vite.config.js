@@ -5,12 +5,18 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: "0.0.0.0", // Allow access from all networks
+    host: "0.0.0.0", // Allow external access
     port: process.env.PORT || 5173, // Use Render's assigned port or default to 5173
     strictPort: true, // Ensures it runs only on the assigned port
-    allowedHosts: "all", // Allow all external hosts (less secure)
+    allowedHosts: ["portpolio-v3z1.onrender.com"], // Allow Render host
+  },
+  preview: {
+    host: "0.0.0.0",
+    port: 4173,
+    strictPort: true,
+    allowedHosts: ["portpolio-v3z1.onrender.com"],
   },
   build: {
-    chunkSizeWarningLimit: 1000, // Increase chunk size limit
+    chunkSizeWarningLimit: 1000, // Increase chunk size warning limit
   },
 })
