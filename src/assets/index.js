@@ -1,4 +1,6 @@
 import logo from "./logo.png";
+import logo3 from "./logo3.png";
+import MILAN_LOGO from "./MILAN_LOGO.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -24,6 +26,9 @@ import mui from "./skills/mui.png"
 import express from "./skills/express.png"
 import mysql from "./skills/mysql.png"
 import aws from "./skills/aws.png"
+import Django from "./skills/Django.png";
+import python from "./skills/python.png";
+import redis from "./skills/redis.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -37,11 +42,15 @@ import tripguide from "./tripguide.png";
 import project2 from "./project2.png";
 import project1 from "./project1.png";
 import project3 from "./project3.png";
-import live from './live.png'
+import project4 from "./project4.png";
+import project5 from "./project5.jpg";
+import live from "./live.png"
 
 
 export {
   logo,
+  logo3,
+  MILAN_LOGO,
   live,
   backend,
   creator,
@@ -73,9 +82,14 @@ export {
   starbucks,
   tesla,
   carrent,
+  Django,
   jobit,
+  python,
+  redis,
   tripguide,
   project2,
   project1,
   project3,
+  project4,
+  project5,
 };

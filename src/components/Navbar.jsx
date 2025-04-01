@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo } from "../assets";
+import { logo,MILAN_LOGO,logo3 } from "../assets";
 import { menu, close } from "../assets";
 
 
@@ -46,11 +46,13 @@ const Navbar = () => {
           }}
         >
          
-            <img src={logo} alt="logo" className="w-14 h-16 object-cover" />
+            {/* <img src={logo} alt="logo" className="w-14 h-16 object-cover" /> */}
+            <img src={logo3} alt="logo" className="w-9 h-8 object-cover" />
+
           
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Mustaqeem &nbsp;
-            <span className="sm:block hidden"> | Devxora</span>
+            MILAN &nbsp;
+            <span className="sm:block hidden"> | CODE. CREATE. CONNNECT</span>
           </p>
         </Link>
 
