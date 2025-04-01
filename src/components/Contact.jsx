@@ -32,36 +32,30 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Milan Kumar Bhuyan",
-          from_email: form.email,
-          to_email: "milanbhuyan7@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+  .send(
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    {
+      from_name: form.name,
+      reply_to: form.email,  // Ensure reply_to is correctly set
+      to_email: "rajabhuyan75@gmail.com",
+      message: form.message,
+    },
+    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  )
+  .then(
+    () => {
+      setLoading(false);
+      alert("Thank you! I will get back to you soon.");
+      setForm({ name: "", email: "", message: "" });
+    },
+    (error) => {
+      setLoading(false);
+      console.error("EmailJS Error:", error);
+      alert("Something went wrong. Please try again.");
+    }
+  );
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
   };
 
   return (
